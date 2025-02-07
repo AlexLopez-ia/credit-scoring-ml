@@ -1,0 +1,32 @@
+preprocessing:
+  columns_to_impute:
+    - MonthlyIncome
+    - NumberOfDependents
+  columns_to_scale:
+    - RevolvingUtilizationOfUnsecuredLines
+    - age
+    - DebtRatio
+    - MonthlyIncome
+  outlier_columns:
+    - MonthlyIncome
+    - DebtRatio
+    - RevolvingUtilizationOfUnsecuredLines
+    - age
+  outlier_std: 3
+
+feature_engineering:
+  create_features:
+    - DebtToIncome
+    - TotalDelinquencies
+  feature_selection:
+    method: 'k_best'
+    k: 10
+
+model:
+  logistic_regression:
+    penalty: 'l2'
+    solver: 'lbfgs'
+    C: 1.0
+    max_iter: 2000
+    random_state: 42
+    class_weight: balanced 
