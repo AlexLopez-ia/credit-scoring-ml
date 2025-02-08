@@ -5,7 +5,7 @@ Modelo de machine learning para predecir el riesgo crediticio de clientes basado
 ## 📊 Descripción
 Este proyecto implementa un modelo de clasificación para predecir la probabilidad de impago de créditos. Utiliza características como el ratio de deuda, ingresos mensuales y el historial de pagos atrasados para realizar las predicciones.
 
-Este es un proyecto de práctica personal utilizando el dataset público ["Give Me Some Credit"](https://github.com/JLZml/Credit-Scoring-Data-Sets/blob/master/3.%20Kaggle/Give%20Me%20Some%20Credit/cs-training.csv) de Kaggle.
+Este es un proyecto de práctica personal utilizando el dataset público ["Give Me Some Credit"](https://github.com/JLZml/Credit-Scoring-Data-Sets/blob/master/3.%20Kaggle/Give%20Me%20Some%20Credit/cs-training.csv) de Kaggle. El dataset incluido en este repositorio es público y se usa únicamente con fines educativos y de demostración.
 
 ## 🛠 Tecnologías Utilizadas
 - Python 3.10
@@ -19,7 +19,7 @@ Este es un proyecto de práctica personal utilizando el dataset público ["Give 
 prediction_scoring/
 ├── config/          # Configuración del modelo
 │   └── model_params.yaml
-├── data/            # Datos (no incluidos en git)
+├── data/            # Datos del dataset público
 │   └── raw/
 ├── models/          # Modelos entrenados
 ├── src/             # Código fuente
@@ -38,9 +38,7 @@ git clone <url-del-repositorio>
 cd prediction_scoring
 ```
 
-2. Descargar el dataset:
-- Descargar el archivo `cs-training.csv` del [repositorio original](https://github.com/JLZml/Credit-Scoring-Data-Sets/blob/master/3.%20Kaggle/Give%20Me%20Some%20Credit/cs-training.csv)
-- Colocarlo en la carpeta `data/raw/`
+2. El dataset ya está incluido en el repositorio en la carpeta `data/raw/`. Es el dataset público ["Give Me Some Credit"](https://github.com/JLZml/Credit-Scoring-Data-Sets/blob/master/3.%20Kaggle/Give%20Me%20Some%20Credit/cs-training.csv) de Kaggle.
 
 3. Crear y activar entorno virtual:
 ```bash
@@ -76,7 +74,7 @@ El proyecto incluye tests unitarios para:
 - Validación del modelo
 
 ## 🤝 Contribuciones
-Este es un proyecto de práctica personal para aprendizaje de machine learning y buenas prácticas de desarrollo. El dataset utilizado es público y se usa solo con fines educativos.
+Este es un proyecto de práctica personal para aprendizaje de machine learning y buenas prácticas de desarrollo. El dataset utilizado es público y se usa solo con fines educativos y de demostración.
 
 ## 📝 Licencia
 [MIT License](https://opensource.org/licenses/MIT)
@@ -85,10 +83,4 @@ Este es un proyecto de práctica personal para aprendizaje de machine learning y
 [Alex López]
 
 ## 📚 Dataset
-Dataset original: ["Give Me Some Credit"](https://github.com/JLZml/Credit-Scoring-Data-Sets/blob/master/3.%20Kaggle/Give%20Me%20Some%20Credit/cs-training.csv) de Kaggle
-
-```yaml
-preprocessing:
-  columns_to_impute:
-    - MonthlyIncome 
-
+Dataset original: ["Give Me Some Credit"](https://github.com/JLZml/Credit-Scoring-Data-Sets/blob/master/3.%20Kaggle/Give%20Me%20Some%20Credit/cs-training.csv) de Kaggle. Este dataset es público y se incluye en el repositorio únicamente con fines educativos y de demostración.
